@@ -1,0 +1,290 @@
+/*----------------------------------------------------------------------------alle knoppen en layout van titel*/
+.linknav {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px;
+    display: inline-block;
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: #555;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+
+ul li ul li {
+    background: #555;
+    display: block;
+}
+
+ul li ul li a {
+    display: block !important;
+}
+
+ul li ul li:hover {
+    background: #666;
+}
+
+html,
+body {
+    font-family: 'Muli',sans-serif;
+    position: relative;
+    /* overflow-x: hidden; */
+    margin: 0;
+    
+}
+
+/*body {
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    font-family: "Romanica", sans-serif;
+    color: #000000;
+}*/
+
+.content {
+    position: absolute;
+    width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
+
+header {
+    /* padding-right: 10%;
+    padding-left: 10%; */
+    font-size: 1.5rem;
+    font-family: "Capitalis", sans-serif;
+    color: #ffffff;
+    height: 490px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    display: inline-table;
+    justify-content: center;
+}
+
+.pagetitle {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.398);
+    background-blend-mode: difference;
+}
+
+main {
+    padding: 10%;
+}
+
+.centertitle {
+    text-align: center;
+}
+
+p {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.398);
+}
+
+/*----------------------------------------------------------------------------Verschilldende hoofd-afbeeldingen per pagina*/
+
+#indx {
+    background-image: url(afbeeldingen/gravensteenfeesten2022.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#ges {
+    background-image: url(Images/olv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#inf {
+    background-image: url(Images/olv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#lied {
+    background-image: url(Images/olv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#kal {
+    background-image: url(Images/olv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#lid {
+    background-image: url(afbeeldingen/gravensteenfeesten2022.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#cont {
+    background-image: url(Images/olv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#praes {
+    background-image: url(Images/olv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*----------------------------------------------------------------------------preasidium afbeelding layout*/
+.imgpraes {
+    position: relative;
+    width: 18rem;
+}
+
+.imgpraes img {
+    border-top: rgb(0, 0, 0) solid 5px;
+    border-bottom: rgb(0, 0, 0) solid 5px;
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    right: 0;
+    background-color: #0000005f;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 15rem;
+    height: 15rem;
+    transform: scale(0);
+    transition: 0.6s ease;
+}
+
+.imgpraes:hover .overlay {
+    transform: scale(1);
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centercontent {
+    display: grid;
+}
+
+.row {
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* .row article {
+    margin: 5%;
+} */
+
+/*----------------------------------------------------------------------------preasidium pro-praesidia layout*/
+.col {
+    display: inline-flex;
+    justify-content: center;
+    border-top-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.399);
+}
+
+.preasesinjaar {
+    display: inline;
+    justify-content: center;
+}
+
+.jaartalpreasidium {
+    display: inline-block;
+    margin: 4%;
+}
+
+#propraes {
+    background-color: rgb(172, 25, 25);
+    background-size: cover;
+    border-radius: 1%;
+    margin-top: 8%;
+}
+
+#protitle {
+    display: inline-table;
+    margin-left: 6%;
+}
+
+/*----------------------------------------------------------------------------footers*/
+footer {
+    background-color: #000000;
+}
+
+.foot {
+    padding: 0.5rem;
+    background-color: #000000;
+    color: #ffffff;
+    /* margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%; */
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(181, 254, 154);
+}
+
+footer a:hover {
+    color: rgb(0, 225, 82);
+}
+
+/*----------------------------------------------------------------------------contact pagina*/
+iframe {
+    height: 500px;
+    width: 900px;
+}
+
+#contact {
+    padding: 8%;
+}
+
+
+/*----------------------------------------------------------------------------texten*/
+
+.pagetext {
+    text-align: justify;
+}
