@@ -171,8 +171,8 @@ nav {
 }
 
 .imgpraes img {
-    border-top: rgb(0, 0, 0) solid 5px;
-    border-bottom: rgb(0, 0, 0) solid 5px;
+    /* border-top: rgb(0, 0, 0) solid 5px;
+    border-bottom: rgb(0, 0, 0) solid 5px; */
     border-radius: 100%;
     width: 15rem;
     height: 15rem;
@@ -192,7 +192,12 @@ nav {
     transition: 0.6s ease;
 }
 
-.imgpraes:hover .overlay {
+.imgpraes {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.hoverMe:hover .overlay {
     transform: scale(1);
 }
 
@@ -213,10 +218,6 @@ nav {
     display: inline-flex;
     justify-content: center;
 }
-
-/* .row article {
-    margin: 5%;
-} */
 
 /*----------------------------------------------------------------------------preasidium pro-praesidia layout*/
 .col {
@@ -248,7 +249,7 @@ nav {
     margin-left: 6%;
 }
 
-/*----------------------------------------------------------------------------footers*/
+/*-----------------------------------------------------------------------------------------------------footers*/
 footer {
     background-color: #000000;
 }
