@@ -1,4 +1,15 @@
 /*----------------------------------------------------------------------------alle knoppen en layout van titel*/
+.clubSchild {
+    padding: 5%;
+}
+
+.pagetitle {
+    padding: 2%;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.398); */
+    background-blend-mode: difference;
+}
+
 .linknav {
     color: white;
     text-decoration: none;
@@ -18,7 +29,7 @@ ul li {
 }
 
 ul li:hover {
-    background: #555;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 ul li:hover ul {
@@ -32,7 +43,7 @@ ul li ul {
 }
 
 ul li ul li {
-    background: #555;
+    background: rgba(0, 0, 0, 0.4);
     display: block;
 }
 
@@ -41,7 +52,7 @@ ul li ul li a {
 }
 
 ul li ul li:hover {
-    background: #666;
+    background: rgba(0, 0, 0);
 }
 
 html,
@@ -83,12 +94,6 @@ header {
     justify-content: center;
 }
 
-.pagetitle {
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.398);
-    background-blend-mode: difference;
-}
-
 main {
     padding: 10%;
 }
@@ -103,7 +108,7 @@ p {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.398);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*----------------------------------------------------------------------------Verschilldende hoofd-afbeeldingen per pagina*/
@@ -116,28 +121,28 @@ nav {
 }
 
 #ges {
-    background-image: url(Images/olv.jpg);
+    background-image: url(afbeeldingen/olv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #inf {
-    background-image: url(Images/olv.jpg);
+    background-image: url(afbeeldingen/olv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #lied {
-    background-image: url(Images/olv.jpg);
+    background-image: url(afbeeldingen/olv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #kal {
-    background-image: url(Images/olv.jpg);
+    background-image: url(afbeeldingen/olv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -151,14 +156,14 @@ nav {
 }
 
 #cont {
-    background-image: url(Images/olv.jpg);
+    background-image: url(afbeeldingen/olv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #praes {
-    background-image: url(Images/olv.jpg);
+    background-image: url(afbeeldingen/olv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
