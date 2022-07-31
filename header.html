@@ -1,9 +1,37 @@
-
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+            </script>
             <header id="indx">
-                <img class="clubSchild" src="/afbeeldingen/shild.ico" alt="ClubSchild">
-
-                <nav>
-                    <h1 class="pagetitle">Wase Club Gent</h1>
+                <img id="header" class="clubSchild" src="/afbeeldingen/shild.ico" alt="ClubSchild">
+                <nav id="navbar">
+                    <!-- <hr size="20" color="#d71f26" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
+                    <hr size="20" color="#ffffff" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
+                    <hr size="20" color="#116835" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;"> -->
+                    <div class="mytextdiv">
+                        <div class="flagDividerGreen"></div>
+                        <div class="flagDividerWhite"></div>
+                        <div class="flagDividerRed"></div>
+                        <b class="pagetitle" style="width: 20%;">
+                            Wase Club Gent
+                        </b>
+                        <div class="flagDividerRed"></div>
+                        <div class="flagDividerWhite"></div>
+                        <div class="flagDividerGreen"></div>
+                    </div>
+                    <!-- <hr size="20" color="#d71f26" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
+                    <hr size="20" color="#ffffff" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
+                    <hr size="20" color="#116835" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;"> -->
                     <div>
                         <ul>
                             <li class="listnav"><a class="linknav" href="index.html">Startpagina</a></li>
@@ -13,6 +41,7 @@
                                     <li><a class="linknav" href="praesidium.html">Praesidium</a></li>
                                     <li><a class="linknav" href="clublied.html">Clublied</a></li>
                                     <li><a class="linknav" href="geschiedenis.html">Geschiedenis</a></li>
+                                    <li><a class="linknav" href="papierke.html">'t WC Papierke</a></li>
                                 </ul>
                             </li>
                             <li class="listnav"><a class="linknav" href="kalender.html">Kalender</a></li>

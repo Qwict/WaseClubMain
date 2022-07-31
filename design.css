@@ -1,75 +1,10 @@
-/*----------------------------------------------------------------------------alle knoppen en layout van titel*/
-.clubSchild {
-    padding: 5%;
-}
-
-.pagetitle {
-    padding: 2%;
-    text-align: center;
-    /* background-color: rgba(0, 0, 0, 0.398); */
-    background-blend-mode: difference;
-}
-
-.linknav {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 15px;
-    display: inline-block;
-}
-
-ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    display: inline-block;
-}
-
-ul li:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-ul li:hover ul {
-    display: block;
-}
-
-ul li ul {
-    position: absolute;
-    width: 200px;
-    display: none;
-}
-
-ul li ul li {
-    background: rgba(0, 0, 0, 0.4);
-    display: block;
-}
-
-ul li ul li a {
-    display: block !important;
-}
-
-ul li ul li:hover {
-    background: rgba(0, 0, 0);
-}
-
-html,
-body {
+/*---------------------------------------------------------------------------- Global Settings */
+html, body {
     font-family: 'Muli',sans-serif;
     position: relative;
     /* overflow-x: hidden; */
     margin: 0;
-    
 }
-
-/*body {
-    background-color: #ffffff;
-    font-size: 1.25rem;
-    font-family: "Romanica", sans-serif;
-    color: #000000;
-}*/
 
 .content {
     position: absolute;
@@ -79,97 +14,57 @@ body {
     margin-bottom: 0rem;
 }
 
-header {
-    /* padding-right: 10%;
-    padding-left: 10%; */
-    font-size: 1.5rem;
-    font-family: "Capitalis", sans-serif;
-    color: #ffffff;
-    height: 490px;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    background-color: black;
-    display: inline-table;
-    justify-content: center;
+/*---------------------------------------------------------------------------- Papierke Settings */
+
+.imgPapierke {
+
 }
 
-main {
-    padding: 10%;
+.imgPapierke:hover {
+
 }
 
-.centertitle {
-    text-align: center;
+.hovertext {
+    position: absolute;
+    /* display: none; */
+}
+.imgPapierke:hover + .hovertext{
+    color: red;
+    text-decoration: none;
+
 }
 
-p {
-    padding-left: 4%;
-    padding-right: 4%;
+.papierkeBlock {
+    position: relative;
 }
 
-nav {
-    background-color: rgba(0, 0, 0, 0.4);
+/*---------------------------------------------------------------------------- alle knoppen en layout van titel */
+
+.clubSchild {
+    padding: 5%;
 }
 
-/*----------------------------------------------------------------------------Verschilldende hoofd-afbeeldingen per pagina*/
+/*---------------------------------------------------------------------------- Verschilldende hoofd-afbeeldingen per pagina */
 
-#indx {
-    background-image: url(afbeeldingen/gravensteenfeesten2022.2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+#indx {background-image: url(afbeeldingen/gravensteenfeesten2022.2.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;}
 
-#ges {
-    background-image: url(afbeeldingen/olv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+#ges {    background-image: url(afbeeldingen/olv.jpg);    background-repeat: no-repeat;    background-size: cover;    background-position: center;}
 
-#inf {
-    background-image: url(afbeeldingen/olv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+#inf {    background-image: url(afbeeldingen/olv.jpg);    background-repeat: no-repeat;    background-size: cover;    background-position: center;}
 
-#lied {
-    background-image: url(afbeeldingen/olv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+#lied {    background-image: url(afbeeldingen/olv.jpg);    background-repeat: no-repeat;    background-size: cover;    background-position: center;}
 
-#kal {
-    background-image: url(afbeeldingen/olv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+#kal {    background-image: url(afbeeldingen/olv.jpg);    background-repeat: no-repeat;    background-size: cover;    background-position: center;}
 
-#lid {
-    background-image: url(afbeeldingen/gravensteenfeesten2022.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+#lid {    background-image: url(afbeeldingen/gravensteenfeesten2022.jpg);    background-repeat: no-repeat;    background-size: cover;    background-position: center;}
 
-#cont {
-    background-image: url(afbeeldingen/olv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+#cont {    background-image: url(afbeeldingen/olv.jpg);    background-repeat: no-repeat;    background-size: cover;    background-position: center;}
 
 #praes {
-    background-image: url(afbeeldingen/olv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+    background-image: url(afbeeldingen/olv.jpg);    background-repeat: no-repeat;    background-size: cover;    background-position: center;}
 
 /*----------------------------------------------------------------------------preasidium afbeelding layout*/
+
 .imgpraes {
     position: relative;
     width: 18rem;
@@ -255,6 +150,7 @@ nav {
 }
 
 /*-----------------------------------------------------------------------------------------------------footers*/
+
 footer {
     background-color: #000000;
 }
@@ -278,7 +174,8 @@ footer a:hover {
     color: rgb(0, 225, 82);
 }
 
-/*----------------------------------------------------------------------------contact pagina*/
+/*---------------------------------------------------------------------------- contact pagina*/
+
 iframe {
     height: 500px;
     width: 900px;
@@ -289,8 +186,149 @@ iframe {
 }
 
 
-/*----------------------------------------------------------------------------texten*/
+/*---------------------------------------------------------------------------- texten*/
 
 .pagetext {
     text-align: justify;
+}
+
+.pdfViewer {
+    align-items: center;
+}
+
+/*---------------------------------------------------------------------------- navbar*/
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000; /* the nav bar must stay on top! */
+  background-color: black;
+  transition: 0.5s;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.mytextdiv {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+/* All the colors for the flag */
+.flagDividerRed {flex-grow:1;height: 10px;background-color: #d71f26;width: 20%;}
+.flagDividerWhite {flex-grow:1;height: 10px;background-color: #ffffff;width: 20%;}
+.flagDividerGreen {flex-grow:1;height: 10px;background-color: #116835;width: 20%;}
+
+.pagetitle {
+    padding: 2%;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.398); */
+    background-blend-mode: difference;
+    flex-grow:0;
+}
+
+.linknav {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px;
+    display: inline-block;
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+
+ul li ul li {
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+}
+
+ul li ul li a {
+    display: block !important;
+}
+
+ul li ul li:hover {
+    background: rgba(0, 0, 0);
+}
+
+
+/*body {
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    font-family: "Romanica", sans-serif;
+    color: #000000;
+}*/
+
+
+
+header {
+    /* padding-right: 10%;
+    padding-left: 10%; */
+    font-size: 1.5rem;
+    font-family: "Capitalis", sans-serif;
+    color: #ffffff;
+    height: 490px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    display: inline-table;
+    justify-content: center;
+}
+
+main {
+    padding: 10%;
+}
+
+.centertitle {
+    text-align: center;
+}
+
+p {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.4);
 }
