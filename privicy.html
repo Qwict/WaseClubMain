@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+    <head>
+        <title>Data verzameling en Privacy</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="keywords" content="Wase club Gent, Studentenclub, Studentenvereniging, Wase club, Waasland, Gent,">
+        <link rel="stylesheet" href="design.css">
+        <link rel="icon" type="image/x-icon" href="/afbeeldingen/shild.ico">
+        <!-- Matomo site analytics-->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="//analytics.jorisduyse.com/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </head>
+    <!-- For header and footer spawn automation -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script> $(function(){ $("#header").load("header.html"); $("#footer").load("footer.html"); });</script> 
+    <body>
+        <div class="content">
+            <div id="header"></div>
+            <main>
+                <h1>Data verzameling en Privacy</h1>
+                <p>
+                    Bij gebruik van deze site wordt beperkte data van de gebruiker terug gestuurd. 
+                    Deze informatie wordt dan enkel lokaal opgeslagen zodat we een overzicht krijgen van hoeveel 
+                    traffic er op de site terecht komt. U kunt er voor kiezen om uw data niet door te geven.
+                </p>
+
+                <iframe style="border: 0; height: 200px; width: 600px;"
+                    src="https://analytics.jorisduyse.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=ffffff&fontSize=12px&fontFamily=sans-serif"
+                ></iframe>
+
+                <h3>Enkele voorbeelden</h3>
+                <p>Een paar echte voorbeelden van data die reeds verzameld werd met deze site.</p>
+
+                <div>
+
+                    <div id="widgetIframe"><iframe width="100%" height="350" src="https://analytics.jorisduyse.com/index.php?module=Widgetize&action=iframe&disableLink=1&widget=1&moduleToWidgetize=Referrers&actionToWidgetize=getSocials&idSite=1&period=day&date=today" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
+                    
+                    <div id="widgetIframe"><iframe width="100%" height="350" src="https://analytics.jorisduyse.com/index.php?module=Widgetize&action=iframe&disableLink=1&widget=1&moduleToWidgetize=UserCountryMap&actionToWidgetize=realtimeMap&idSite=1&period=day&date=today" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
+                    
+                    <div id="widgetIframe"><iframe width="100%" height="350" src="https://analytics.jorisduyse.com/index.php?forceView=1&viewDataTable=graphEvolution&module=Widgetize&action=iframe&disableLink=1&widget=1&moduleToWidgetize=VisitsSummary&actionToWidgetize=getEvolutionGraph&idSite=1&period=day&date=today" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
+                </div>
+                
+            </main>
+            <div id="footer"></div>
+    </body>
+</html>

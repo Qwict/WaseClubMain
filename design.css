@@ -1,5 +1,14 @@
 /*---------------------------------------------------------------------------- Global Settings */
 html, body {
+    /* Disable text selection */
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+
     font-family: 'Muli',sans-serif;
     position: relative;
     /* overflow-x: hidden; */
@@ -152,17 +161,16 @@ html, body {
 /*-----------------------------------------------------------------------------------------------------footers*/
 
 footer {
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #000000;
+    bottom: 0px;
 }
 
 .foot {
     padding: 0.5rem;
     background-color: #000000;
-    color: #ffffff;
-    /* margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%; */
+    color: #ffffff;s
 }
 
 footer a {
@@ -332,3 +340,77 @@ p {
 nav {
     background-color: rgba(0, 0, 0, 0.4);
 }
+
+
+/*---------------------------------------------------------------------------- Cookie banner and disclaimer with link */
+
+.cookie-banner a {
+    color: #d71f26;
+    text-decoration: none;
+}
+.cookie-banner:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.cookie-banner {
+    position: fixed;
+    bottom: 40px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    padding: 5px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+}.close {
+
+    height: 20px;
+    background-color: #777;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+/*---------------------------------------------------------------------------- Merchandise site */
+
+.merchandise {
+    display: inline-block;
+    position: relative;
+    width: 18rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.merchandise img {
+    border-top: rgb(0, 0, 0) solid 5px;
+    border-bottom: rgb(0, 0, 0) solid 5px;
+    border-radius: 40%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.merchandise h3 {
+    text-align: center;
+}
+
+.card {
+    width: 130px;
+    height: 195px;
+    position: relative;
+    display: inline-block;
+}
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.card:hover .img-top {
+    display: inline;
+}
+
