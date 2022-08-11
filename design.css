@@ -25,26 +25,33 @@ html, body {
 
 /*---------------------------------------------------------------------------- Papierke Settings */
 
-.imgPapierke {
-
+.papierke_2020 {
+    /* width: 21rem;
+    height: 30rem;
+    padding: 3rem; */
+    /* background: url("/afbeeldingen/papierke_2021_cover.jpg") no-repeat; */
+    display: inline-block;
+}
+.card:hover {
+    background: url("afbeeldingen/papierke_2021_hover.png") no-repeat;
 }
 
-.imgPapierke:hover {
-
+.cover {
+    width: 21rem;
+    height: 30rem;
+    padding: 3rem;
 }
 
-.hovertext {
+.papierkeHover {
+    width: 21rem;
+    height: 30rem;
+    padding: 3rem;
+    display: none;
     position: absolute;
-    /* display: none; */
+    z-index: 99;
 }
-.imgPapierke:hover + .hovertext{
-    color: red;
-    text-decoration: none;
-
-}
-
-.papierkeBlock {
-    position: relative;
+.cover:hover, .papierkeHover {
+    display: block;
 }
 
 /*---------------------------------------------------------------------------- alle knoppen en layout van titel */

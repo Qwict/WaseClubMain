@@ -23,6 +23,11 @@
             })();
         </script>
         <!-- End Matomo Code -->
+        <script>
+            function changebg(element, name) {
+                element.setAttribute('src', name);
+            }
+        </script>
     </head>
     <!-- For header and footer spawn automation -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -47,22 +52,17 @@
                     en het wachtwoord juist in te voeren / raden.
                 </p>
 
-                <!-- <div class="papierkeBlock"> -->
-                    <a target="_blank" href="https://cloud.jorisduyse.com/s/5SY3RfGDSFDXjZZ">
-                        <img class="imgPapierke" src="/afbeeldingen/t_wc_papierke_2021.png" alt="'t WC Papierke 2021" width="24%" height="16%" style="padding: 3%;">
-                    </a>
-                <!-- </div> -->
-                <!-- <div class="papierkeBlock"> -->
-                    <a target="_blank" href="https://cloud.jorisduyse.com/s/3bD82HLHoSoyKXi">
-                        <img class="imgPapierke" src="/afbeeldingen/t_wc_papierke_2020.png" alt="'t WC Papierke 2020" width="24%" height="16%" style="padding: 3%;">
-                    </a>
-                <!-- </div> -->
-
-                <!-- <div class="papierkeBlock"> -->
-                    <a target="_blank" href="https://cloud.jorisduyse.com/s/7T6W7zjQwiD58aD">
-                        <img class="imgPapierke" src="/afbeeldingen/t_wc_papierke_2019.png" alt="'t WC Papierke 2019" width="24%" height="16%" style="padding: 3%;">
-                    </a>
-                <!-- </div> -->
+                <style>
+                </style>
+                <a target="_blank" href="https://cloud.waseclub.com/index.php/s/FMW4SGij9CXPpM2">
+                    <img id="my-img" src="/afbeeldingen/papierke_2021_cover.jpg" onmouseover="changebg(this, 'afbeeldingen/papierke_2021_hover.png');" onmouseout="changebg(this, 'afbeeldingen/papierke_2021_cover.jpg');" />
+                </a>
+                <a target="_blank" href="https://cloud.waseclub.com/index.php/s/nLNx36EDbzWqF8F">
+                    <img id="my-img" src="/afbeeldingen/papierke_2020_cover.jpg" onmouseover="changebg(this, 'afbeeldingen/papierke_2020_hover.png');" onmouseout="changebg(this, 'afbeeldingen/papierke_2020_cover.jpg');" />
+                </a>
+                <a target="_blank" href="https://cloud.waseclub.com/index.php/s/d95dECb6kA5aKeB">
+                    <img id="my-img" src="/afbeeldingen/papierke_2019_cover.jpg" onmouseover="changebg(this, 'afbeeldingen/papierke_2019_hover.png');" onmouseout="changebg(this, 'afbeeldingen/papierke_2019_cover.jpg');" />
+                </a>
             </main>
             <div id="footer"></div>
     </body>
