@@ -12,8 +12,32 @@
                   }
                 }
             </script>
+            <script>
+                /* Parallax code */
+                $(window).scroll(function() {
+                    var scroll_pos = $(window).scrollTop();
+                    $("#indx").css({
+                        "background-position-y" :  (0.4*scroll_pos) + "px",
+                    });
+                    $(".schild").css({
+                        "background-position-y" : "calc(36% + " + 0.6*scroll_pos + "px)",
+                    });
+                });
+            </script>
+            <script>
+                /* Current page script */
+                $(function(){
+                    $('a').each(function(){
+                        if ($(this).prop('href').replace('index.html', '') 
+                                == window.location.href.replace('index.html', '')) {
+                            $(this).parents('li').addClass('current');
+                        }
+                    });
+                });
+            </script>
             <header id="indx">
-                <img id="header" class="clubSchild" src="/afbeeldingen/shild.ico" alt="ClubSchild">
+                <!-- <img id="header" class="clubSchild" src="/afbeeldingen/shild.ico" alt="ClubSchild"> -->
+                <div class="schild"></div>
                 <nav id="navbar">
                     <!-- <hr size="20" color="#d71f26" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
                     <hr size="20" color="#ffffff" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
@@ -22,7 +46,7 @@
                         <div class="flagDividerGreen"></div>
                         <div class="flagDividerWhite"></div>
                         <div class="flagDividerRed"></div>
-                        <b class="pagetitle" style="width: 20%;">
+                        <b class="pagetitle">
                             Wase Club Gent
                         </b>
                         <div class="flagDividerRed"></div>
@@ -34,8 +58,8 @@
                     <hr size="20" color="#116835" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;"> -->
                     <div>
                         <ul>
-                            <li class="listnav"><a class="linknav" href="index.html">Startpagina</a></li>
-                            <li class="listnav">
+                            <li><a class="linknav" href="index.html">Startpagina</a></li>
+                            <li>
                                 <a class="linknav" href="info.html">Clubinfo</a>
                                 <ul>
                                     <li><a class="linknav" href="praesidium.html">Praesidium</a></li>
@@ -44,14 +68,14 @@
                                     <li><a class="linknav" href="papierke.html">'t WC Papierke</a></li>
                                 </ul>
                             </li>
-                            <li class="listnav"><a class="linknav" href="kalender.html">Kalender</a></li>
-                            <li class="listnav"><a class="linknav" href="contact.html">Contact</a></li>
-                            <!-- <li class="listnav">
+                            <li><a class="linknav" href="kalender.html">Kalender</a></li>
+                            <li><a class="linknav" href="contact.html">Contact</a></li>
+                            <!-- <li>
                                 <a class="linknav" href="lid.html">Lid worden</a>
                                 <ul> -->
                                     <li><a class="linknav" href="merchandise.html">Merchandise</a></li>
-                                </ul>
-                            <!-- </li> -->
+                                <!--</ul>
+                            </li> -->
                         </ul>
                     </div>
                 </nav>

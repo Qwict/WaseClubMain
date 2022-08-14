@@ -5,7 +5,9 @@
         <meta charset="utf-8">
         <meta name="keywords" content="Wase club Gent, Studentenclub, Studentenvereniging, Wase club, Waasland, Gent,">
         <link rel="stylesheet" href="design.css">
+        <link rel="stylesheet" href="css/contact.css">
         <link rel="icon" type="image/x-icon" href="/afbeeldingen/shild.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Matomo site analytics-->
         <script>
             var _paq = window._paq = window._paq || [];
@@ -31,20 +33,65 @@
         <main>
           <section>
             <div>
-              <h1>Contact</h1>
-              <h2>Waar je ons kan vinden</h2>
-              <p>Elke dinsdag is er een clubavond in ons stamcafé Delirum Tremens. Spreek ons gerust aan, we dragen allemaal ons lint.</p>
-              <p>Verder kan je ons contacteren via onderstaande info.</p>
-            </div>
-            <div class="row">
-              <div id="frame">
-                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976!2d3.7258969!3d51.0392186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s51.0392186%2C3.7258969!5e0!3m2!1snl!2sBE!4v1653913908000" loading="lazy"></iframe></p>
-              </div>
-              <div id="contact">
-                <p>Mailadres: waseclub@hotmail.com</p>
-                <p>Facebook: <a id="facebooklink" link="website"href="https://www.facebook.com/waseclub/">facebookpagina</a></p>
-                <p>Adres: <a link="website" href="https://goo.gl/maps/bTZryuXdxmFZ5SkA9">Overpoortstraat 104, 9000 Gent</a> </p>
-                <p>Clubavond: Elke dinsdag 21:00 - vroege uurtjes</p>
+              <h2 class="title">Contacteer ons</h2>
+              <!-- A small line -->
+              <div class="flex-container">
+                <div class="flex-column"> <!-- Left column -->
+                  <div class="flex-row"> <!-- First row -->
+                    <!-- Address -->
+                    <div class="item">
+                      <!-- Icon -->
+                      <span><i class="fa-light fa-location-dot fa-3x"></i></span>
+                      <!-- Title -->
+                      <h5>Waar:</h5>
+                      <!-- text -->
+                      <p>
+                        Delirium Tremens
+                        <br>
+                        Overpoortstraat 104, 9000 Gent
+                      </p>
+                    </div>
+                    <!-- When -->
+                    <div class="item">
+                      <!-- Icon -->
+                      <span><i class="fa-light fa-clock-nine fa-3x"></i></span>
+                      <!-- Title -->
+                      <h5>Wanneer:</h5>
+                      <!-- text -->
+                      <p>
+                        Dinsdag: 21.00 - vroege uurtjes <!-- Different color -->
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex-row"> <!-- Seccond row -->
+                    <!-- Mail -->
+                    <div class="item">
+                      <!-- Icon -->
+                      <span><i class="fa-light fa-envelope fa-3x"></i></span>
+                      <!-- Title -->
+                      <h5>Email:</h5>
+                      <!-- text -->
+                      <p>
+                        <a href="mailto:waseclub@hotmail.com">waseclub@hotmail.com</a>
+                      </p>
+                    </div>
+                    <!-- Facebook -->
+                    <div class="item">
+                      <!-- Icon -->
+                      <span><i class="fa-light fa-f fa-3x"></i></span>
+                      <!-- Title -->
+                      <h5>Facebook:</h5>
+                      <!-- text -->
+                      <p>
+                        <a href="https://www.facebook.com/waseclub/">waseclub</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-column"> <!-- Right column -->
+                  <!-- Google maps here -->
+                  <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976!2d3.7258969!3d51.0392186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s51.0392186%2C3.7258969!5e0!3m2!1snl!2sBE!4v1653913908000" loading="lazy" frameborder="0"></iframe>
+                </div>
               </div>
             </div>
           </section>

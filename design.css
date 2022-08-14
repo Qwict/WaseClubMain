@@ -15,6 +15,10 @@ html, body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .content {
     position: absolute;
     width: 100%;
@@ -25,44 +29,41 @@ html, body {
 
 /*---------------------------------------------------------------------------- Papierke Settings */
 
-.papierke_2020 {
-    /* width: 21rem;
-    height: 30rem;
-    padding: 3rem; */
-    /* background: url("/afbeeldingen/papierke_2021_cover.jpg") no-repeat; */
-    display: inline-block;
-}
-.card:hover {
-    background: url("afbeeldingen/papierke_2021_hover.png") no-repeat;
+.imgPapierke {
+
 }
 
-.cover {
-    width: 21rem;
-    height: 30rem;
-    padding: 3rem;
+.imgPapierke:hover {
+
 }
 
-.papierkeHover {
-    width: 21rem;
-    height: 30rem;
-    padding: 3rem;
-    display: none;
+.hovertext {
     position: absolute;
-    z-index: 99;
+    /* display: none; */
 }
-.cover:hover, .papierkeHover {
-    display: block;
+.imgPapierke:hover + .hovertext{
+    color: red;
+    text-decoration: none;
+
 }
 
-/*---------------------------------------------------------------------------- alle knoppen en layout van titel */
-
-.clubSchild {
-    padding: 5%;
+.papierkeBlock {
+    position: relative;
 }
 
 /*---------------------------------------------------------------------------- Verschilldende hoofd-afbeeldingen per pagina */
 
-#indx {background-image: url(afbeeldingen/gravensteenfeesten2022.2.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;}
+#indx {background-image: url(afbeeldingen/gravensteenfeesten2022.2.jpg);background-repeat: no-repeat;background-size: cover;background-position: center 0px;}
+
+.schild {
+    background-image: url(afbeeldingen/shild.svg);background-repeat: no-repeat;background-size: initial;background-position: center 36%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
 
 #ges {    background-image: url(afbeeldingen/olv.jpg);    background-repeat: no-repeat;    background-size: cover;    background-position: center;}
 
@@ -84,6 +85,7 @@ html, body {
 .imgpraes {
     position: relative;
     width: 18rem;
+    text-align: center;
 }
 
 .imgpraes img {
@@ -96,15 +98,15 @@ html, body {
 
 .overlay {
     position: absolute;
-    bottom: 11px;
-    left: 0;
+    top: 0;
+    left: 50%;
     right: 0;
     background-color: #0000005f;
     border-radius: 100%;
     overflow: hidden;
     width: 15rem;
     height: 15rem;
-    transform: scale(0);
+    transform: translate(-50%) scale(0);
     transition: 0.6s ease;
 }
 
@@ -113,8 +115,12 @@ html, body {
     margin-right: 3%;
 }
 
+.hoverMe {
+    position: relative;
+}
+
 .hoverMe:hover .overlay {
-    transform: scale(1);
+    transform: translate(-50%) scale(1);
 }
 
 .text {
@@ -130,17 +136,12 @@ html, body {
     display: grid;
 }
 
-.row {
-    display: inline-flex;
-    justify-content: center;
-}
-
 /*----------------------------------------------------------------------------preasidium pro-praesidia layout*/
 .col {
     display: inline-flex;
     justify-content: center;
     border-top-style: solid;
-    border-top-color: rgba(255, 255, 255, 0.399);
+    border-top-color: #211D1E;
 }
 
 .preasesinjaar {
@@ -154,10 +155,11 @@ html, body {
 }
 
 #propraes {
-    background-color: rgb(172, 25, 25);
+    background-color: #E43540;
     background-size: cover;
     border-radius: 1%;
     margin-top: 8%;
+    color: #ffdada;
 }
 
 #protitle {
@@ -170,23 +172,81 @@ html, body {
 footer {
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #000000;
+    background-color: #28292B;
     bottom: 0px;
-}
-
-.foot {
     padding: 0.5rem;
-    background-color: #000000;
-    color: #ffffff;s
+    color: #ffffff;
 }
 
-footer a {
-    text-decoration: none;
+.row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 0 5%;
+}
+
+.row > div:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.row > div:not(:first-child) {
+    box-sizing: border-box;
+    flex: 1 1 25%;
+    max-width: 100%;
+    padding: 5px;
+}
+
+@media (max-width: 905px) and (min-width: 525px) {
+    .row div:not(:first-child) {
+        flex: 1 1 50%;
+    }
+    .row {
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 524px) {
+    .row div:not(:first-child) {
+        flex: 0 0 100%;
+    }
+    .row {
+        margin: 0 15%;
+    }
+}
+
+.row-break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.no-split {
+    white-space: nowrap;
+}
+
+footer i {
     color: rgb(181, 254, 154);
+}
+
+footer p, footer a {
+    text-decoration: none;
+    color: #cec7c7;
+    transition: color .2s ease-in-out;
 }
 
 footer a:hover {
     color: rgb(0, 225, 82);
+}
+
+footer b {
+    font-size: 0.8rem;
+}
+
+.icons8 {
+    vertical-align: middle;
 }
 
 /*---------------------------------------------------------------------------- contact pagina*/
@@ -218,24 +278,21 @@ iframe {
   text-align: center;
 }
 
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
+nav {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    width: 100%;
 }
-
-#navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
 
 .sticky {
   position: fixed;
   top: 0;
+  bottom: auto;
   width: 100%;
   z-index: 100000; /* the nav bar must stay on top! */
-  background-color: black;
-  transition: 0.5s;
+  background-color: #141517;
+  transition: background-color 0.5s;
 }
 
 .sticky + .content {
@@ -246,25 +303,55 @@ iframe {
     display:flex;
     flex-direction:row;
     align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 765px) {
+    .mytextdiv b {
+        width: auto;
+    }
 }
 
 /* All the colors for the flag */
-.flagDividerRed {flex-grow:1;height: 10px;background-color: #d71f26;width: 20%;}
-.flagDividerWhite {flex-grow:1;height: 10px;background-color: #ffffff;width: 20%;}
-.flagDividerGreen {flex-grow:1;height: 10px;background-color: #116835;width: 20%;}
+.flagDividerRed {  height: 10px; margin-top: .5rem; background-color: #d71f26;width: 8%; flex-grow: 1;}
+.flagDividerWhite {height: 10px; margin-top: .5rem; background-color: #ffffff;width: 8%; flex-grow: 1;}
+.flagDividerGreen {height: 10px; margin-top: .5rem; background-color: #116835;width: 8%; flex-grow: 1;}
 
 .pagetitle {
-    padding: 2%;
+    padding: 1rem 1rem .5rem 1rem;
     text-align: center;
     /* background-color: rgba(0, 0, 0, 0.398); */
     background-blend-mode: difference;
-    flex-grow:0;
+    width: 30vw;
+}
+
+.linknav::after {
+    position: absolute;
+    background-color: white;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: 13px;
+    border-radius: 200px;
+    transition: width 0.35s ease 0s, left 0.35s ease 0s;
+}
+
+li:hover > .linknav::after {
+    width: calc(100% - 30px);
+    left: 15px;
+}
+
+.current > .linknav::after {
+    width: calc(100% - 30px);
+    left: 15px;
 }
 
 .linknav {
+    position: relative;
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 15px;
     display: inline-block;
 }
@@ -279,31 +366,24 @@ ul li {
     display: inline-block;
 }
 
-ul li:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
 ul li:hover ul {
-    display: block;
+    max-height: 300px;
 }
 
 ul li ul {
     position: absolute;
+    display: block;
+    overflow: hidden;
     width: 200px;
-    display: none;
+    max-height: 0px;
+    transition: max-height .6s ease-in-out;
+    border-radius:  0 0 5px 5px;
+    z-index: 10;
 }
 
 ul li ul li {
     background: rgba(0, 0, 0, 0.4);
     display: block;
-}
-
-ul li ul li a {
-    display: block !important;
-}
-
-ul li ul li:hover {
-    background: rgba(0, 0, 0);
 }
 
 
@@ -319,6 +399,7 @@ ul li ul li:hover {
 header {
     /* padding-right: 10%;
     padding-left: 10%; */
+    position: relative;
     font-size: 1.5rem;
     font-family: "Capitalis", sans-serif;
     color: #ffffff;
@@ -332,16 +413,51 @@ header {
 }
 
 main {
-    padding: 10%;
+    padding: 5%;
 }
 
 .centertitle {
     text-align: center;
 }
 
-p {
+main p, main h1, main h2, main h3 {
     padding-left: 4%;
     padding-right: 4%;
+}
+
+h1, h2 {
+    color: #393939;
+    font-size: 2rem;
+line-height: 1.25;
+padding: 0 0 .9375rem;
+font-family: Roboto,Roboto-Fallback,sans-serif;
+text-align: left;
+margin-top: 0;
+margin-bottom: 0;
+
+}
+
+h3 {
+    color: #9d9d9d;
+    font-size: 1rem;
+line-height: 1.375;
+padding: 0 0 .3125rem;
+font-family: Roboto,Roboto-Fallback,sans-serif;
+font-weight: 700;
+text-align: left;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+p {
+    color: #666;
+    font-size: 1rem;
+line-height: 1.625;
+font-family: Roboto,Roboto-Fallback,sans-serif;
+font-weight: 400;
+    padding-bottom: 1.125rem;
+    padding: 0 0 .75rem;
+margin: 0;
 }
 
 nav {
@@ -393,8 +509,8 @@ nav {
 }
 
 .merchandise img {
-    border-top: rgb(0, 0, 0) solid 5px;
-    border-bottom: rgb(0, 0, 0) solid 5px;
+    border-top: #211D1E solid 5px;
+    border-bottom: #211D1E solid 5px;
     border-radius: 40%;
     width: 15rem;
     height: 15rem;
@@ -405,19 +521,27 @@ nav {
 }
 
 .card {
-    width: 130px;
-    height: 195px;
     position: relative;
-    display: inline-block;
 }
 .card .img-top {
-    display: none;
+    display: inline;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity .35s ease-in-out, visibility .35s ease-in-out;
     z-index: 99;
 }
 .card:hover .img-top {
-    display: inline;
+    visibility: visible;
+    opacity: 1;
 }
 
+@media (max-width: 927px) {
+    p {
+        font-size: 10.5pt;
+        line-height: 1.1;
+    }
+}
