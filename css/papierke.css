@@ -1,14 +1,5 @@
-.hovertext {
-    position: absolute;
-    /* display: none; */
-}
-
-.imgPapierke:hover+.hovertext {
-    color: red;
-    text-decoration: none;
-
-}
-
-.papierkeBlock {
-    position: relative;
+.imgPapierke {
+    width: 24%;
+    height: 16%;
+    padding: 3%;
 }
