@@ -40,7 +40,7 @@ nav {
     z-index: 100000;
     /* the nav bar must stay on top! */
     background-color: #141517;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, width .3s ease-in-out;
 }
 
 .sticky+.content {
@@ -172,6 +172,118 @@ header {
 
 .centertitle {
     text-align: center;
+}
+
+.hamburger {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: 0 2vw 0 0;
+    cursor: pointer;
+    transition: transform .3s ease-out;
+}
+
+.hamburger span, .hamburger span:before, .hamburger span:after {
+    display: block;
+    height: 4px;
+    width: 34px;
+    background-color: #ffffff;
+    margin: 23px 8px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+  }
+  .hamburger span:before, .hamburger span:after {
+    content: " ";
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 0;
+    transform: rotateZ(0deg);
+    transform-origin: 3px 3px;
+    background-color: #116835;
+  }
+  .hamburger span:after {
+    margin-top: 10px;
+    background-color: #d71f26;
+  }
+  
+  .clicked .hamburger span {
+    background-color: transparent;
+    margin-left: 12px;
+  }
+  .clicked .hamburger span:before {
+    transform: rotateZ(45deg);
+    background-color: #116835;
+  }
+  .clicked .hamburger span:after {
+    transform: rotateZ(-45deg);
+    background-color: #d71f26;
+  }
+  .clicked .hamburger {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) inset;
+  }
+
+
+@media screen and (max-width: 730px) {
+    .flagDividerGreen,
+    .flagDividerWhite,
+    .flagDividerRed {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .pagetitle {
+        padding: 1rem 0 1rem 9%;
+    }
+
+    .mytextdiv {
+        justify-content: space-between;
+    }
+
+    .menu ul, .menu li {
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        right: -40vw;
+        top: 0;
+        height: 100vh;
+        width: 40vw;
+        transition: right .3s ease-in-out;
+
+        background-color: #292d33;
+    }
+    ul li ul {
+        max-height: 300px;
+        width: 40vw;
+    }
+    ul li ul .linknav {
+        color: #DDDDDD;
+        font-size: 1rem;
+    }
+    ul li ul .linknav::after {
+        background-color: #DDDDDD;
+    }
+
+    .clicked .menu {
+        right: 0px;
+    }
+    .content {
+        transition: width .3s ease-in-out;
+    }
+    .clicked, .clicked .sticky {
+        width: calc(100% - 40vw);
+    }
 }
 
 

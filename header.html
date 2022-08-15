@@ -35,13 +35,20 @@
                     });
                 });
             </script>
+            <script>
+                $('.hamburger').on('click', function(){
+                    const clicked = "clicked";
+                    const menu = ".content";
+                    if($(menu).hasClass(clicked)){
+                        $(menu).removeClass(clicked);
+                    } else {
+                        $(menu).addClass(clicked);
+                    }
+                });
+            </script>
             <header id="indx">
-                <!-- <img id="header" class="clubSchild" src="/afbeeldingen/shild.ico" alt="ClubSchild"> -->
                 <div class="schild"></div>
                 <nav id="navbar">
-                    <!-- <hr size="20" color="#d71f26" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
-                    <hr size="20" color="#ffffff" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
-                    <hr size="20" color="#116835" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;"> -->
                     <div class="mytextdiv">
                         <div class="flagDividerGreen"></div>
                         <div class="flagDividerWhite"></div>
@@ -52,11 +59,11 @@
                         <div class="flagDividerRed"></div>
                         <div class="flagDividerWhite"></div>
                         <div class="flagDividerGreen"></div>
+                        <div class="hamburger">
+                            <span></span>
+                        </div>
                     </div>
-                    <!-- <hr size="20" color="#d71f26" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
-                    <hr size="20" color="#ffffff" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;">
-                    <hr size="20" color="#116835" style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px; width: 40%;"> -->
-                    <div>
+                    <div class="menu">
                         <ul>
                             <li><a class="linknav" href="index.html">Startpagina</a></li>
                             <li>
