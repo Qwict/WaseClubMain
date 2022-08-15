@@ -1,0 +1,49 @@
+.merchandise {
+    display: inline-block;
+    position: relative;
+    width: 18rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.merchandise img {
+    border-top: #211D1E solid 5px;
+    border-bottom: #211D1E solid 5px;
+    border-radius: 40%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.merchandise h3 {
+    text-align: center;
+}
+
+.card {
+    position: relative;
+}
+
+.card .img-top {
+    display: inline;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity .35s ease-in-out, visibility .35s ease-in-out;
+    z-index: 99;
+}
+
+.card:hover .img-top {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 927px) {
+    p {
+        font-size: 10.5pt;
+        line-height: 1.1;
+    }
+}

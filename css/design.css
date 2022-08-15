@@ -1,0 +1,90 @@
+html,
+body {
+    /* Disable text selection */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+
+    font-family: 'Muli', sans-serif;
+    position: relative;
+    /* overflow-x: hidden; */
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
+
+.pagetext {
+    text-align: justify;
+}
+
+.pdfViewer {
+    align-items: center;
+}
+
+main {
+    padding: 5%;
+}
+
+main p,
+main h1,
+main h2,
+main h3 {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+h1,
+h2 {
+    color: #393939;
+    font-size: 2rem;
+    line-height: 1.25;
+    padding: 0 0 .9375rem;
+    font-family: Roboto, Roboto-Fallback, sans-serif;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+h3 {
+    color: #9d9d9d;
+    font-size: 1rem;
+    line-height: 1.375;
+    padding: 0 0 .3125rem;
+    font-family: Roboto, Roboto-Fallback, sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.625;
+    font-family: Roboto, Roboto-Fallback, sans-serif;
+    font-weight: 400;
+    padding-bottom: 1.125rem;
+    padding: 0 0 .75rem;
+    margin: 0;
+}

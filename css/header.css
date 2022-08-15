@@ -1,0 +1,201 @@
+#indx {
+    background-image: url(../afbeeldingen/gravensteenfeesten2022.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.schild {
+    background-image: url(../afbeeldingen/shild.svg);
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center 36%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    z-index: 100000;
+    /* the nav bar must stay on top! */
+    background-color: #141517;
+    transition: background-color 0.5s;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.mytextdiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 765px) {
+    .mytextdiv b {
+        width: auto;
+    }
+}
+
+/* All the colors for the flag */
+.flagDividerRed {
+    height: 10px;
+    margin-top: .5rem;
+    background-color: #d71f26;
+    width: 8%;
+    flex-grow: 1;
+}
+
+.flagDividerWhite {
+    height: 10px;
+    margin-top: .5rem;
+    background-color: #ffffff;
+    width: 8%;
+    flex-grow: 1;
+}
+
+.flagDividerGreen {
+    height: 10px;
+    margin-top: .5rem;
+    background-color: #116835;
+    width: 8%;
+    flex-grow: 1;
+}
+
+.pagetitle {
+    padding: 1rem 1rem .5rem 1rem;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.398); */
+    background-blend-mode: difference;
+    width: 30vw;
+}
+
+.linknav::after {
+    position: absolute;
+    background-color: white;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: 13px;
+    border-radius: 200px;
+    transition: width 0.35s ease 0s, left 0.35s ease 0s;
+}
+
+li:hover>.linknav::after {
+    width: calc(100% - 30px);
+    left: 15px;
+}
+
+.current>.linknav::after {
+    width: calc(100% - 30px);
+    left: 15px;
+}
+
+.linknav {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 15px;
+    display: inline-block;
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover ul {
+    max-height: 300px;
+}
+
+ul li ul {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    width: 200px;
+    max-height: 0px;
+    transition: max-height .6s ease-in-out;
+    border-radius: 0 0 5px 5px;
+    z-index: 10;
+}
+
+ul li ul li {
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+}
+
+header {
+    /* padding-right: 10%;
+      padding-left: 10%; */
+    position: relative;
+    font-size: 1.5rem;
+    font-family: "Capitalis", sans-serif;
+    color: #ffffff;
+    height: 490px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    display: inline-table;
+    justify-content: center;
+}
+
+.centertitle {
+    text-align: center;
+}
+
+
+
+
+/* -------------- Cookie ------------ */
+.cookie-banner a {
+    color: #d71f26;
+    text-decoration: none;
+}
+
+.cookie-banner:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 40px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    padding: 5px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+}

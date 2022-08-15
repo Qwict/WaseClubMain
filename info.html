@@ -2,30 +2,22 @@
 <html lang="nl-be">
     <head>
         <title>Wase clubinfo</title>
-        <meta charset="utf-8">
-        <meta name="keywords" content="Wase club Gent, Studentenclub, Studentenvereniging, Wase club, Waasland, Gent,">
-        <link rel="stylesheet" href="design.css">
         <link rel="icon" type="image/x-icon" href="/afbeeldingen/shild.ico">
+
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Matomo site analytics-->
-        <script>
-            var _paq = window._paq = window._paq || [];
-            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-            var u="//analytics.jorisduyse.com/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '1']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-            })();
-        </script>
-        <!-- End Matomo Code -->
+        <meta name="keywords" content="Wase club Gent, Studentenclub, Studentenvereniging, Wase club, Waasland, Gent,">
+        
+        <link rel="stylesheet" href="css/design.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+        
+        <script src="js/analytics.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!-- For header and Footer automation -->
+        <script> $(function(){ $("#header").load("header.html"); $("#footer").load("footer.html"); });</script> 
     </head>
-    <!-- For header and footer automation -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script> $(function(){ $("#header").load("header.html"); $("#footer").load("footer.html"); });</script> 
     <body>
         <div class="content">
             <div id="header"></div>
