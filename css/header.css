@@ -24,7 +24,7 @@
     text-align: center;
 }
 
-nav {
+#header nav {
     position: absolute;
     bottom: 0;
     top: auto;
@@ -105,7 +105,7 @@ nav {
     transition: width 0.35s ease 0s, left 0.35s ease 0s;
 }
 
-li:hover>.linknav::after {
+#header li:hover>.linknav::after {
     width: calc(100% - 30px);
     left: 15px;
 }
@@ -124,21 +124,21 @@ li:hover>.linknav::after {
     display: inline-block;
 }
 
-ul {
+#header ul {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
-ul li {
+#header ul li {
     display: inline-block;
 }
 
-ul li:hover ul {
+#header ul li:hover ul {
     max-height: 300px;
 }
 
-ul li ul {
+#header ul li ul {
     position: absolute;
     display: block;
     overflow: hidden;
@@ -149,12 +149,12 @@ ul li ul {
     z-index: 10;
 }
 
-ul li ul li {
+#header ul li ul li {
     background: rgba(0, 0, 0, 0.4);
     display: block;
 }
 
-header {
+#header header {
     /* padding-right: 10%;
       padding-left: 10%; */
     position: relative;
@@ -234,7 +234,7 @@ header {
         display: block;
     }
 
-    nav {
+    #header nav {
         background-color: rgba(0, 0, 0, 0.75);
     }
 
@@ -247,8 +247,8 @@ header {
     }
 
     .menu ul, .menu li {
-        display: block;
-        position: relative;
+        display: block!important;
+        position: relative!important;
         z-index: 10;
     }
 
@@ -263,15 +263,15 @@ header {
 
         background-color: #292d33;
     }
-    ul li ul {
+    #header ul li ul {
         max-height: 300px;
         width: 40vw;
     }
-    ul li ul .linknav {
+    #header ul li ul .linknav {
         color: #DDDDDD;
         font-size: 1rem;
     }
-    ul li ul .linknav::after {
+    #header ul li ul .linknav::after {
         background-color: #DDDDDD;
     }
 
