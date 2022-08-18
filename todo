@@ -6,3 +6,7 @@
 - presidium: margins between predidia, pro presidia
 - clubinfo: kleuren club, oudste club sk, ...
 - kalender: add pictures to events & dubbel check them, when event already happened => gray out or do not show
+
+
+Bugs:
+- Some android phone: Corner-1 & 2, border is way wider than border of page, It has a padding above landingpage photo

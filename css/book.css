@@ -239,7 +239,7 @@
   }
   
   .layer-text {
-    position: fixed;
+    position: absolute;
     left: 0px;
     top: 0px;
     right: 0px;
@@ -280,8 +280,7 @@
     transition: -webkit-transform 650ms cubic-bezier(.165, .84, .44, 1);
     transition: transform 650ms cubic-bezier(.165, .84, .44, 1);
     transition: transform 650ms cubic-bezier(.165, .84, .44, 1), -webkit-transform 650ms cubic-bezier(.165, .84, .44, 1);
-    border-color: yellow;
-    border-style: solid;
+    border: yellow solid 3px;
     border-right: none;
   }
   
@@ -336,8 +335,8 @@
     top: 36px;
     width: 5vw;
     height: 5vw;
-    background-image: -webkit-linear-gradient(315deg, #fff 30%, transparent);
-    background-image: linear-gradient(135deg, #fff 30%, transparent);
+    background-image: -webkit-linear-gradient(315deg, #fff 30%, #fff);
+    background-image: linear-gradient(135deg, #fff 30%, #fff);
     box-shadow: inset 13px 0 17px -12px hsla(0, 13%, 82%, .43);
     border-left: yellow solid 3px;
   }
@@ -387,7 +386,7 @@
   }
 
   .layer1 {
-    position: fixed;
+    position: absolute;
     left: 0px;
     top: 0px;
     right: 0;
@@ -409,7 +408,7 @@
   }
   
   .layer2 {
-    position: fixed;
+    position: absolute;
     left: 0.75%;
     top: 0px;
     right: -5px;
@@ -431,7 +430,7 @@
   }
   
   .layer3 {
-    position: fixed;
+    position: absolute;
     left: 1.5%;
     top: 0px;
     right: -10px;
@@ -453,7 +452,7 @@
   }
   
   .layer4 {
-    position: fixed;
+    position: absolute;
     left: 2.25%;
     top: 0px;
     right: -15px;
@@ -490,8 +489,7 @@
     transition: transform 850ms ease;
     transition: transform 850ms ease, -webkit-transform 850ms ease;
 
-    border-color: yellow;
-    border-style: solid;
+    border: yellow solid 3px;
     border-left: none;
   }
   
