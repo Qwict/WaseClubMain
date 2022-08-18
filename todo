@@ -2,6 +2,7 @@
 - Smooth page transitions
 - Make pictures smaller to improve loading times
 - Use same color palette over whole site
-- Codex: set unused strofes in a lighter color
+- Codex: set unused strofes in a lighter color, back pag: codex blue
 - pro presidia
-- clubinfo: kleuren club, ...
+- clubinfo: kleuren club, oudste club sk, ...
+- kalender: add more events, when event already happened => gray out or do not show

@@ -1,32 +1,114 @@
 <!DOCTYPE html>
 <html lang="nl-be">
-    <head>
-        <title>Wase kalender</title>
-        <link rel="icon" type="image/x-icon" href="/afbeeldingen/shild.ico">
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Wase club Gent, Studentenclub, Studentenvereniging, Wase club, Waasland, Gent,">
-        
-        <link rel="stylesheet" href="css/design.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+<head>
+    <title>newPageExample</title>
+    <link rel="icon" type="image/x-icon" href="/afbeeldingen/shild.ico">
 
-        <script src="js/analytics.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <!-- For header and Footer automation -->
-        <script> $(function(){ $("#header").load("header.html"); $("#footer").load("footer.html"); });</script> 
-    </head>
-    <body>
-        <div class="content">
-            <div id="header"></div>
-            <main>
-                    <section>
-                      <img src="/afbeeldingen/kalender.jpg" alt="Een afbeelding van de planning voor dit jaar" style="width:100%">
-                    </section>
-            </main>
-            <div id="footer"></div>
-        </div>
-    </body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Wase club Gent, Studentenclub, Studentenvereniging, Wase club, Waasland, Gent,">
+
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/kalender.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+
+    <link rel="stylesheet" id="ect-google-font-css" href="https://fonts.googleapis.com/css?family=Monda|Open+Sans|Monda|Open+Sans" type="text/css" media="all">
+
+    <script src="js/analytics.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- For header and Footer automation -->
+    <script> $(function () { $("#header").load("header.html"); $("#footer").load("footer.html"); });</script>
+</head>
+
+<body>
+    <div class="content">
+        <div id="header"></div>
+        <main>
+            <div class="kalender">
+              <!-- Orange one -->
+              <div class="ect-carousel-event style-1 ect-featured-event slick-slide inherited-styles-for-exported-element">
+                <div class="ect-carousel-event-area">
+                  <div class="ect-carousel-image">
+                      <img src="https://eventscalendartemplates.com/wp-content/uploads/2019/09/fest5.jpg" alt="Dummy single day feature event">
+                  </div>
+              
+                  <div class="ect-carousel-date">
+                    <span class="ev-day">10</span>
+                    <span class="ev-mo">November</span>
+                    <span class="ev-yr">2022</span>
+                    <span class="ev-time"><i class="fa-regular fa-clock-nine"></i> 8:00 pm - 1:30 am</span>
+                  </div>
+                  <div class="ect-event-category ect-carousel-categories">
+                    <ul class="tribe_events_cat">
+                      <li><a>cantus</a></li>
+                    </ul>
+                  </div>
+                  <div class="ect-carousel-title">
+                    <h4>Vriendjes cantus</h4>
+                  </div>
+                  <div class="ect-carousel-venue">
+                    <div class="carousel-view-venue">
+                      <a href="https://goo.gl/maps/eWjULAffJ5GjiBs88" title="Click to view a Google Map" target="_blank" rel="noreferrer noopener">
+                        <span class="ect-icon"><i class="fa-regular fa-location-dot"></i></span>
+                        <span class="ect-venue-details">
+                            Canard Bizar,<br>
+                            Overpoortstraat 94/92,
+                            9000
+                            <abbr title>Gent</abbr> <!-- Somehow adding a title underlines this -->
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ect-carousel-cost inherited-styles-for-exported-element">
+                      <span class="ect-icon"><i class="fa-solid fa-ticket fa-xs"></i></span>
+                      <span itemprop="price">$25.00</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Blue one -->
+              <div class="ect-carousel-event style-2 ect-featured-event slick-slide inherited-styles-for-exported-element">
+                <div class="ect-carousel-event-area">
+                  <div class="ect-carousel-image">
+                      <img src="https://eventscalendartemplates.com/wp-content/uploads/2019/09/fest5.jpg" alt="Dummy single day feature event">
+                  </div>
+              
+                  <div class="ect-carousel-date">
+                    <span class="ev-day">22</span>
+                    <span class="ev-mo">November</span>
+                    <span class="ev-yr">2022</span>
+                    <span class="ev-time"><i class="fa-regular fa-clock-nine"></i> 8:00 pm - 2:30 am</span>
+                  </div>
+                  <div class="ect-event-category ect-carousel-categories">
+                    <ul class="tribe_events_cat">
+                      <li><a>club avond</a></li>
+                    </ul>
+                  </div>
+                  <div class="ect-carousel-title">
+                    <h4>Cocktailavond</h4>
+                  </div>
+                  <div class="ect-carousel-venue">
+                    <div class="carousel-view-venue">
+                      <a href="https://goo.gl/maps/F1z4rtny9JjBs6rP9" title="Click to view a Google Map" target="_blank" rel="noreferrer noopener">
+                        <span class="ect-icon"><i class="fa-regular fa-location-dot"></i></span>
+                        <span class="ect-venue-details">
+                            Delirium Tremens,<br>
+                            Overpoortstraat 104,
+                            9000
+                            <abbr title>Gent</abbr> <!-- Somehow adding a title underlines this -->
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+        <div id="footer"></div>
+</body>
+
 </html>

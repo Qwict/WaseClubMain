@@ -1,0 +1,456 @@
+main abbr, main span {
+  font-family: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+main abbr, main h4, main li, main span {
+  border-style: initial;
+  border-width: 0;
+}
+
+main abbr, main li, main span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+main i, main ul {
+  border-style: initial;
+  border-width: 0;
+}
+
+main a, main img {
+  max-width: 100%;
+}
+
+main img {
+  border-style: none;
+}
+
+main a {
+  outline: 0;
+  text-decoration: none;
+}
+
+main a, main abbr, main div, main h4, main i, 
+main img, main li, main span, main ul {
+  vertical-align: baseline;
+}
+
+main a, main div, main i, main img,
+main li, main ul {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+main a, main div, main i, main img {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+main a, main div {
+  border-style: initial;
+  border-width: 0;
+}
+
+.inherited-styles-for-exported-element {
+  color: #00435e;
+  font-family: karla, HelveticaNeue, "Helvetica Neue", Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  height: auto;
+  line-height: 1.65em;
+}
+
+main ::selection {
+  background-color: #0d95c7;
+  color: #fff;
+}
+
+.ect-event-category {
+  display: inline-block;
+  line-height: 14px;
+  margin: 3px 0;
+}
+
+.slick-slide {
+  min-height: 1px;
+}
+
+.ect-carousel-event-area {
+  display: inline-block;
+  height: 100%;
+  margin: 0 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.ect-carousel-image, .ect-carousel-image a {
+  display: inline-block;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.ect-carousel-date {
+  display: inline-block;
+  padding: 20px 10px;
+  vertical-align: top;
+  border-radius: 4px;
+}
+
+.ect-carousel-categories {
+  padding: 0 10px;
+}
+
+.ect-carousel-title, .ect-carousel-venue {
+  display: inline-block;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.carousel-view-venue {
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+  word-break: break-word;
+}
+
+.image-overlay {
+  background-color: #121212;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 300;
+}
+
+.slick-slide, .slick-slide img {
+  display: block;
+}
+
+.ect-carousel-image img {
+  height: 220px;
+  object-fit: cover;
+  object-position: center bottom;
+  width: 100%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.ect-carousel-title h4 {
+  color: #00445e;
+  font-family: Monda;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 15px 0;
+  padding: 0;
+}
+
+main a:hover {
+  outline: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main a, main abbr, main div, main h4, main i,
+main img, main li, main span, main ul {
+  border-color: #cdecf7;
+}
+
+main a {
+  color: #0d95c7;
+}
+
+main ::-webkit-input-placeholder {
+  color: #00435e;
+}
+
+main div li {
+  text-indent: 0;
+}
+
+.ect-carousel-date .ev-day {
+  display: inline-block;
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+.ect-carousel-date .ev-mo, .ect-carousel-date .ev-yr {
+  display: inline-block;
+  font-size: .85em;
+  line-height: 1.1em;
+  vertical-align: middle;
+}
+
+.ect-carousel-date .ev-time {
+  display: inline-block;
+  font-size: .45em;
+  margin-top: 2px;
+  width: 100%;
+}
+
+.ect-carousel-categories {
+  left: 0;
+  position: relative;
+  top: 0;
+}
+
+.ect-carousel-date {
+  left: -15px;
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  z-index: 99;
+}
+
+.image-overlay .image-overlay-inside {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.ect-event-category ul.tribe_events_cat {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ect-carousel-image a:hover {
+  opacity: .85;
+}
+
+.ect-carousel-date .ev-time span {
+  display: inline-block;
+}
+
+.carousel-view-venue span.ect-venue-details {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 42px);
+}
+
+span.ect-icon {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  height: auto;
+  margin-right: 4px;
+  text-align: center;
+  vertical-align: top;
+  width: 32px;
+}
+
+.ect-carousel-title h4 a:hover {
+  opacity: .75;
+}
+
+.ect-carousel-date::after {
+  border-style: solid;
+  border-width: 11px;
+  bottom: -10px;
+  content: "";
+  display: inline-block;
+  left: 4.8px;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 0;
+}
+
+main a .image-overlay {
+  transition: opacity .4s ease-in-out;
+}
+
+.image-overlay .image-overlay-inside::before {
+  background-color: #000;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  height: 80px;
+  left: 50%;
+  line-height: 80px;
+  margin: -40px 0 0 -40px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 80px;
+  z-index: 500;
+}
+
+.ect-event-category ul.tribe_events_cat li {
+  display: inline;
+  margin: 0;
+  padding: 0 4px 3px 0;
+  text-transform: capitalize;
+}
+
+.ect-event-category ul.tribe_events_cat li a {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.ect-carousel-date span[class^=ev-]:nth-of-type(1) {
+  font-size: 1em;
+}
+
+.image-overlay.overlay-type-extern .image-overlay-inside::before {
+  content: "";
+  font-family: entypo-fontello;
+}
+
+.carousel-view-venue span.ect-venue-details span.ect-google {
+  display: inline-block;
+  width: 100%;
+}
+
+.ect-featured-event.style-1 .ect-event-category ul.tribe_events_cat li a {
+  background-color: #f19e59;
+  border-color: #ed832a;
+  color: #3a2201;
+}
+.ect-featured-event.style-2 .ect-event-category ul.tribe_events_cat li a {
+  color: #0a7aa3;
+  border-color: #a8e7ff;
+  background: #dbf5ff;
+}
+
+main * {
+  box-sizing: border-box;
+}
+
+main h4 a {
+  text-decoration: none;
+}
+
+.ect-carousel-event-area {
+  background-color: #f4fcff;
+  box-shadow: #c1eeff 0 0 25px -5px inset;
+  border-radius: 5px;
+}
+
+.ect-carousel-image {
+  background-color: #c1eeff;
+  border-radius: 5px 5px 0 0;
+}
+
+.ect-carousel-venue {
+  color: #00445e;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.ect-carousel-date, .ect-carousel-title h4 a {
+  font-family: Monda;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.ect-carousel-readmore a, .ect-carousel-venue a {
+  color: #002e3f;
+  font-family: "Open Sans";
+}
+
+.ect-carousel-title h4 a {
+  color: #00445e;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.slick-slide:focus {
+  outline: 0;
+}
+
+.ect-featured-event .ect-carousel-date {
+  color: #3a2201;
+}
+
+.ect-featured-event.style-1 .ect-carousel-date {
+  background-color: rgba(241, 158, 89, .95);
+  box-shadow: #ee8b38 0 0 25px -5px inset;
+}
+
+.ect-featured-event.style-2 .ect-carousel-date {
+  background: rgba(219,245,255,.95);
+  box-shadow: inset 0 0 25px -5px #b7ebff;
+}
+
+.ect-featured-event.style-1 .ect-carousel-date::after {
+  border-color: transparent transparent #ee8b38;
+}
+.ect-featured-event.style-2 .ect-carousel-date::after {
+  border-color: transparent transparent #ccf1ff;
+}
+
+main h4 {
+  font-weight: 700;
+  text-transform: none;
+}
+
+main span.image-overlay.overlay-type-extern {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .ect-carousel-date {
+    font-size: 20px !important;
+  }
+}
+
+.ect-carousel-cost {
+  color: #00445e;
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: 700;
+  padding: 10px 10px 0;
+  width: 100%;
+}
+
+.ect-carousel-event:hover .ect-carousel-image img {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.ect-carousel-event {
+  margin: 15px 0;
+  display: inline-block;
+  max-width: 389px;
+}
+
+.fa-ticket {
+  transform: rotateZ(-40deg);
+}
+
+.ect-carousel-cost .ect-icon {
+  margin-right: 2px;
+}
+
+.kalender {
+  display: flex;
+  vertical-align: baseline;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.carousel-view-venue a:hover {
+  text-decoration: none;
+}
