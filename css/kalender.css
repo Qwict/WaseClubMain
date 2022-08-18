@@ -319,12 +319,12 @@ main a .image-overlay {
   width: 100%;
 }
 
-.ect-featured-event.style-1 .ect-event-category ul.tribe_events_cat li a {
+.ect-featured-event:nth-child(odd) .ect-event-category ul.tribe_events_cat li a {
   background-color: #f19e59;
   border-color: #ed832a;
   color: #3a2201;
 }
-.ect-featured-event.style-2 .ect-event-category ul.tribe_events_cat li a {
+.ect-featured-event:nth-child(even) .ect-event-category ul.tribe_events_cat li a {
   color: #0a7aa3;
   border-color: #a8e7ff;
   background: #dbf5ff;
@@ -383,20 +383,20 @@ main h4 a {
   color: #3a2201;
 }
 
-.ect-featured-event.style-1 .ect-carousel-date {
+.ect-featured-event:nth-child(odd) .ect-carousel-date {
   background-color: rgba(241, 158, 89, .95);
   box-shadow: #ee8b38 0 0 25px -5px inset;
 }
 
-.ect-featured-event.style-2 .ect-carousel-date {
+.ect-featured-event:nth-child(even) .ect-carousel-date {
   background: rgba(219,245,255,.95);
   box-shadow: inset 0 0 25px -5px #b7ebff;
 }
 
-.ect-featured-event.style-1 .ect-carousel-date::after {
+.ect-featured-event:nth-child(odd) .ect-carousel-date::after {
   border-color: transparent transparent #ee8b38;
 }
-.ect-featured-event.style-2 .ect-carousel-date::after {
+.ect-featured-event:nth-child(even) .ect-carousel-date::after {
   border-color: transparent transparent #ccf1ff;
 }
 
@@ -425,7 +425,7 @@ main span.image-overlay.overlay-type-extern {
   width: 100%;
 }
 
-.ect-carousel-event:hover .ect-carousel-image img {
+.ect-carousel-event-area:hover .ect-carousel-image img {
   -webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }

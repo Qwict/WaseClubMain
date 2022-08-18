@@ -320,8 +320,8 @@
     position: absolute;
     left: -3px;
     top: -3px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-right: 1px solid hsla(0, 13%, 82%, .55);
     border-bottom: 1px solid hsla(0, 13%, 82%, .55);
     background-image: -webkit-linear-gradient(315deg, transparent 47%, #f0f0f0 48%, #fff 55%, #f6f6f6);
@@ -333,7 +333,7 @@
   .corner {
     position: absolute;
     left: -3px;
-    top: 27px;
+    top: 36px;
     width: 5vw;
     height: 5vw;
     background-image: -webkit-linear-gradient(315deg, #fff 30%, transparent);
@@ -344,12 +344,12 @@
   
   .corner2 {
     position: absolute;
-    left: 25px;
+    left: 36px;
     top: -3px;
     width: 5vw;
     height: 5vw;
-    background-image: -webkit-linear-gradient(315deg, #fff 31%, transparent);
-    background-image: linear-gradient(135deg, #fff 31%, transparent);
+    background-image: -webkit-linear-gradient(315deg, #fff 31%, #fff);
+    background-image: linear-gradient(135deg, #fff 31%, #fff);
     box-shadow: inset 0 13px 17px -12px hsla(0, 13%, 82%, .43);
     border-top: yellow solid 3px;
   }
@@ -585,29 +585,30 @@
       width: auto;
     }
     .page-left-2 {
-      border-top-left-radius: 23%;
+      border-top-left-radius: 18%;
     }
     .clubInfo p {
       font-size: 1.2vw!important;
     }
     .corner-fold {
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
       background-image: -webkit-linear-gradient(315deg, transparent 48%, #f0f0f0 49%, #fff 50%, #f6f6f6);
       background-image: linear-gradient(135deg, transparent 48%, #f0f0f0 49%, #fff 50%, #f6f6f6);
     }
     .corner {
-      top: 46px;
+      top: 26px;
       height: 10vw;
     }
     .corner2 {
-      left: 46px;
-      width: 10vw;
+      left: 26px;
+      width: 17vw;
+      background-image: linear-gradient(135deg, #fff 31%, #fff);
     }
     .page-text {
       margin-top: 2vw;
       overflow:  hidden;
-      border-top-left-radius: 10%;
+      border-top-left-radius: 0;
     }
     .page-text h3 {
       margin-top: 0vw;
@@ -756,6 +757,9 @@
     line-height: 1.5;
   }
   
+  .unused {
+    color: #888;
+  }
 
   @media (max-width: 1379px) and (min-width: 1129px) {
     .book-wrap {
@@ -971,14 +975,8 @@
       margin-right: .7vw;
       flex: 1 1 20%;
     }
-    .page-left-2 {
-      border-top-left-radius: 27%;
-    }
     .corner {
       height: 25vw;
-    }
-    .page-text {
-      border-top-left-radius: 15%;
     }
     .page-text p {
       font-size: .7rem;
@@ -1006,7 +1004,7 @@
 
   @media (max-width: 293px) {
     .left-side, .right-side {
-      height: 32rem;
+      height: 37rem;
     }
     .page-left-2 {
       border-top-left-radius: 20%;
