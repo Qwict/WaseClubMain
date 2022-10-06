@@ -184,6 +184,7 @@
 }
 
 .hamburger span, .hamburger span:before, .hamburger span:after {
+    position: relative;
     display: block;
     height: 4px;
     width: 34px;
@@ -195,14 +196,16 @@
   .hamburger span:before, .hamburger span:after {
     content: " ";
     position: absolute;
-    margin-top: -10px;
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
+    top: -10px;
     transform: rotateZ(0deg);
-    transform-origin: 3px 3px;
+    transform-origin: 3px 2px;
     background-color: #116835;
   }
   .hamburger span:after {
-    margin-top: 10px;
+    top: auto;
+    bottom: -10px;
     background-color: #d71f26;
   }
   

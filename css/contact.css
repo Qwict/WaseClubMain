@@ -82,6 +82,7 @@
     max-width: 80px;
     height: 80px;
     margin: 0 auto;
+    padding: 0;
     border-width: 2px;
     border-style: solid;
     border-radius: 50%;
@@ -92,6 +93,8 @@
 
 .item span > i {
     line-height: 80px;
+    margin: 0;
+    padding: 0;
 }
 
 .item h5 {

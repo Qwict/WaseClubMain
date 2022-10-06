@@ -1,0 +1,50 @@
+main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main h1 {
+    flex: 0 0 100%;
+}
+
+.main-panel {
+    position: relative;
+    width: 70%;
+    flex: 3 3 0;
+}
+
+.side-panel {
+    position: relative;
+    width: 30%;
+    flex: 1 1 0;
+}
+
+.side-panel h2 {
+    padding: 0;
+}
+
+/* --------------------------------------------- */
+.event-day {
+    display: flex;
+}
+
+.event-date {
+    width: 45px;
+    border-right: 1px solid gray;
+    margin-right: 10px;
+}
+
+.day-events {
+    position: relative;
+    width: 100%;
+}
+
+.event {
+    position: relative;
+    width: 100%;
+    background-color: #EEEE;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 1px 1px 10px 1px #CCCCCC;
+}
