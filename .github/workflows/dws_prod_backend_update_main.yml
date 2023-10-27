@@ -1,0 +1,23 @@
+name: Automatically deploy production 
+on: 
+  push:
+    branches: 
+    - main
+    
+jobs:
+  build:
+    name: Automatically deploy production on main change -> small footprint
+    runs-on: ubuntu-latest
+    steps:
+    - name: git pull on existing local repo -> small footprint
+      uses: appleboy/ssh-action@v0.1.7
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.WASE_DEPLOY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd /var/www/qwict/WaseClubMain
+          git pull
+          git status
