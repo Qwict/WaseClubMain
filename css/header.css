@@ -201,12 +201,12 @@
     top: -10px;
     transform: rotateZ(0deg);
     transform-origin: 3px 2px;
-    background-color: #116835;
+    background-color: #d71f26;
   }
   .hamburger span:after {
     top: auto;
     bottom: -10px;
-    background-color: #d71f26;
+    background-color: #116835;
   }
   
   .clicked .hamburger span {
