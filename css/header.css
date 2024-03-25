@@ -183,7 +183,9 @@
     transition: transform .3s ease-out;
 }
 
-.hamburger span, .hamburger span:before, .hamburger span:after {
+.hamburger span,
+.hamburger span:before,
+.hamburger span:after {
     position: relative;
     display: block;
     height: 4px;
@@ -192,8 +194,10 @@
     margin: 23px 8px;
     border-radius: 3px;
     transition: all 0.5s ease;
-  }
-  .hamburger span:before, .hamburger span:after {
+}
+
+.hamburger span:before,
+.hamburger span:after {
     content: " ";
     position: absolute;
     margin: 0;
@@ -202,31 +206,36 @@
     transform: rotateZ(0deg);
     transform-origin: 3px 2px;
     background-color: #d71f26;
-  }
-  .hamburger span:after {
+}
+
+.hamburger span:after {
     top: auto;
     bottom: -10px;
     background-color: #116835;
-  }
-  
-  .clicked .hamburger span {
+}
+
+.clicked .hamburger span {
     background-color: transparent;
     margin-left: 12px;
-  }
-  .clicked .hamburger span:before {
+}
+
+.clicked .hamburger span:before {
     transform: rotateZ(45deg);
     background-color: #116835;
-  }
-  .clicked .hamburger span:after {
+}
+
+.clicked .hamburger span:after {
     transform: rotateZ(-45deg);
     background-color: #d71f26;
-  }
-  .clicked .hamburger {
+}
+
+.clicked .hamburger {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) inset;
-  }
+}
 
 
 @media screen and (max-width: 730px) {
+
     .flagDividerGreen,
     .flagDividerWhite,
     .flagDividerRed {
@@ -249,9 +258,10 @@
         justify-content: space-between;
     }
 
-    .menu ul, .menu li {
-        display: block!important;
-        position: relative!important;
+    .menu ul,
+    .menu li {
+        display: block !important;
+        position: relative !important;
         z-index: 10;
     }
 
@@ -266,14 +276,17 @@
 
         background-color: #292d33;
     }
+
     #header ul li ul {
         max-height: 300px;
         width: 40vw;
     }
+
     #header ul li ul .linknav {
         color: #DDDDDD;
         font-size: 1rem;
     }
+
     #header ul li ul .linknav::after {
         background-color: #DDDDDD;
     }
@@ -281,10 +294,13 @@
     .clicked .menu {
         right: 0px;
     }
+
     .content {
         transition: width .3s ease-in-out;
     }
-    .clicked, .clicked .sticky {
+
+    .clicked,
+    .clicked .sticky {
         width: calc(100% - 40vw);
     }
 }
